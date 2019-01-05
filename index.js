@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 function handleSubmit(e) {
   e.preventDefault();
   let passwordLength = parseInt(
-    document.querySelector("#passwordLength").value
+    document.getElementByID("passwordLength").value
   );
 
   if (passwordLength < 4 || !passwordLength ) passwordLength = 4;
