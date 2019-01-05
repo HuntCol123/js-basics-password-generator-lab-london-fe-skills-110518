@@ -43,5 +43,5 @@ function generatePassword(length) {
 }
 
 function appendOutput(password) {
-  document.querySelector("#result").innerText = password;
+  document.querySelector("output").innerText = password;
 }
