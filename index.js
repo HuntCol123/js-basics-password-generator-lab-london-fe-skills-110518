@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 function handleSubmit(e) {
   e.preventDefault();
   let passwordLength = parseInt(
-    document.querySelector("#passwordLength).value);
+    document.querySelector("#passwordLength").value);
 
   if (passwordLength < 4 || !passwordLength ) passwordLength = 4;
 
@@ -43,5 +43,5 @@ function generatePassword(length) {
 }
 
 function appendOutput(password) {
-  document.querySelector("output").innerText = password;
+  document.querySelector("#output").innerText = password;
 }
